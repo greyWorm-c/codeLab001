@@ -14,9 +14,9 @@ tasks:
     mkdir -p /workspace/android-sdk && cd /workspace/android-sdk && wget https://dl.google.com/android/repository/sdk-tools-linux-4333796.zip && unzip sdk-tools-linux-4333796.zip && rm -f sdk-tools-linux-4333796.zip
     /workspace/android-sdk/tools/bin/sdkmanager "platform-tools" "platforms;android-28" "build-tools;28.0.3"
     echo "Init Flutter..."
+    cd /workspace/codeLab001
     flutter upgrade
     flutter doctor --android-licenses
-    cd /workspace/codeLab001
     flutter pub get
   command: |
     flutter pub upgrade
